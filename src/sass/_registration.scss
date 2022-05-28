@@ -1,0 +1,97 @@
+.form {
+    max-width: 280px;
+    height: 466px;
+    text-align: center;
+
+    padding: 33px 8px 31px 8px;
+    margin: 0;
+
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0px 0px;
+    border: 1px;
+
+    background-color: $bgColorPrimary;
+
+    &__info {
+        border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+        padding: 20px 0 20px 0;
+    }
+
+ 
+    &__location {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22;
+
+        margin-bottom: 20px;
+    }
+
+    &__price {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22;
+        
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.21;
+
+        margin-top: 8px;
+    }
+}
+
+.form__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.26;
+    font-family: $fontFamilyTitle;
+
+    color: $fontColorPrimary;
+    
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+}
+.form__caption {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 2.71;
+    font-family: $fontFamilyTitle;
+
+    color: $fontColorPrimary;
+
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+}
+
+.form__form {
+    margin-bottom: 32px;
+}
+
+.form__input {
+    width: 100%;
+    padding-top: 20px;
+
+    border: none;
+    border-bottom: 1px solid $fontColorSecondary;
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.21;
+
+    color: rgba(171, 129, 108, 0.5);
+    background-color: $bgColorPrimary;
+}
+
+.form__button {
+    font-family: $fontFamilyTitle;
+    padding: 8px 47px 9px 46px;
+    border-radius: 25px;
+    border: none;
+
+    color: $colorWhite;
+    background-color: $fontColorSecondary;
+}
