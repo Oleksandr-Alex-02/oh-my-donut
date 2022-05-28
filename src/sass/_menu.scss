@@ -1,22 +1,23 @@
-.mobile{
+.mobile {
     position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;       
-        background-color: $bgColorMenu;
-        opacity: 1;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 5;
-        overflow-y: auto;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $bgColorMenu;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 5;
+    overflow-y: auto;
 
-        &.is-hidden {
-                opacity: 0;
-                visibility: hidden;
-                pointer-events: none;
-        }
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 
 }
+
 
 .menu{
 position: relative;
@@ -26,48 +27,53 @@ align-items: center;
 text-align: center;
 margin: 20px ;
 
-    &__logo{
+
+
+    &__logo {
         margin-bottom: 40px;
         width: 190px;
         height: 85px;
     }
 
-    &__close{
+    &__close {
         position: absolute;
         top: -2px;
         right: 0px;
        background-color: inherit;
        border: 0 transparent;
 
-        &--x{
+
+        &--x {
             width: 18px;
             height: 18px;
         }
     }
 
 }
-.nav{
 
-    &__list{
-        font-family:$fontFamilyPrimary ;
+.nav {
+
+    &__list {
+        font-family: $fontFamilyPrimary ;
         font-size: 24px;
         line-height: 1.22;
         font-weight: 500;
-       
+
     }
-    &__item{
+
+    &__item {
         margin-bottom: 45px;
 
-       
+
     }
 
-    &__link{
+    &__link {
         color: $fontColorAccent;
 
-        &:hover{
-            color:#a1581a;
+        &:hover {
+            color: #a1581a;
         }
 
-        
+
     }
 }
