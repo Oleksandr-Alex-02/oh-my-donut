@@ -1,12 +1,15 @@
 .page-header {
-  position: relative;
   padding-top: 8px;
+}
+
+.container__page-header {
+  position: relative;
 }
 
 .header__image {
   position: absolute;
-  top: -50px;
-  left: -12px;
+  top: -58px;
+  left: -27px;
   z-index: -1;
   width: 130px;
 }
