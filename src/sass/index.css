@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  background-size: cover;
+}
+
+body {
+  background-color: green;
+}
+
+.container {
+  margin: auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
