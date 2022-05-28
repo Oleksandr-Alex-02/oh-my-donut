@@ -10,6 +10,12 @@
         z-index: 5;
         overflow-y: auto;
 
+        &.is-hidden {
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+        }
+
 }
 
 .menu{
@@ -50,9 +56,17 @@ padding: 20px ;
     }
     &__item{
         margin-bottom: 45px;
+
+       
     }
 
     &__link{
         color: $fontColorAccent;
+
+        &:hover{
+            color:#a1581a;
+        }
+
+        
     }
 }
