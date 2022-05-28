@@ -1,10 +1,11 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-    background-color: green;
+  background-color: $bgColorPrimary;
 }
 
 .container {
+
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
