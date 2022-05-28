@@ -7,9 +7,14 @@ body {
 .container {
   margin: auto;
   padding: 0 15px;
+  width: 320px;
 
   @media (min-width: 320px) {
     width: 320px;
+  }
+
+  @media (min-width: 480px) {
+    width: 480px;
   }
 
   @media (min-width: 768px) {
