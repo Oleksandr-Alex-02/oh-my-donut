@@ -1,3 +1,6 @@
+@import './utils/nulling-styles';
+@import './utils/variables';
+
 @import './common';
 @import './header';
 @import './about-us';
@@ -6,6 +9,3 @@
 @import './registration';
 @import './contact';
 @import './footer';
-
-@import './utils/nulling-styles';
-@import './utils/variables';
