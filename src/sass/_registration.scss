@@ -12,33 +12,29 @@
 
     background-color: $bgColorPrimary;
 
-    &__info {
-        border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-        padding: 20px 0 20px 0;
+    @media screen and (min-width: 768px){
+        display: flex;
+        max-width: 704px;
+        height: 260px;
+
+        padding: 40px 61px 40px 61px;
+        border-radius: 150px;
     }
+}
 
- 
-    &__location {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1.22;
+.form__caption {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 2.71;
+    font-family: $fontFamilyTitle;
 
-        margin-bottom: 20px;
+    color: $fontColorPrimary;
+
+    @media screen and (max-width: 767px) {
+        display: none;
     }
-
-    &__price {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1.22;
-        
-    }
-
-    &__text {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.21;
-
-        margin-top: 8px;
+    @media screen and (min-width: 768px){
+        text-align: center;
     }
 }
 
@@ -54,18 +50,35 @@
     display: none;
     }
 }
-.form__caption {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 2.71;
-    font-family: $fontFamilyTitle;
 
-    color: $fontColorPrimary;
+ .form__info {
+     border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+     padding: 20px 0 20px 0;
+ }
 
-    @media screen and (max-width: 767px) {
-            display: none;
-        }
+.form__location {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+
+    margin-bottom: 20px;
 }
+
+ .form__price {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    }
+
+.form__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.21;
+
+    margin-top: 8px;
+}
+
+
 
 .form__form {
     margin-bottom: 32px;
