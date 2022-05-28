@@ -1,0 +1,41 @@
+.socials {
+
+display: flex;
+justify-content: center;
+margin: 32px;
+
+    &__item {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+    &__item:not(:last-child){
+    margin-right: 16px;
+}
+
+    &__icon {
+    width: 16px;
+    height: 16px;
+}
+
+}
+.phone-icon {
+    width: 13px;
+    height: 12px;
+    margin-right: 4px;
+}
+.location-icon {
+    width: 11px;
+    height: 13px;
+    margin-right: 4px;
+}
+.contacts-footer {
+    display: flex;
+    justify-content: space-between;
+    &__link{
+        font-size: 16px;
+        line-height: 1.25;
+
+        color: #2E2520;
+    }
+}
