@@ -1,5 +1,45 @@
 .background{
-    background-image:  url(../images/bg-head.png);
+    
     background-repeat: no-repeat;
+    background-size: contain;
     width: 100%;
+    position: relative;
+    z-index: 0;
+
+    &--top{
+        background-image: url(../images/bg-head-mob.png);
+    @media (min-width: 380px) {
+            background-position: 0 -100px;
+        }
+    
+    @media (min-width: 420px) {
+            background-position: 0 -200px;
+        }
+    @media (min-width: 480px) {
+        background-position: 0 -250px;
+                }
+    @media (min-width: 520px) {
+        background-position: 0 -300px;
+            }
+    @media (min-width: 650px){
+        
+        background-position: 0 -450px;
+        background-size: cover;
+    }
+    @media (min-width: 768px) {
+    background-image: url(../images/bg-head-tablet.png);
+
+    }
+    @media (min-width: 1200px) {
+        background-position: 0 -240px;
+        background-image: url(../images/bg-head-desk.png);
+    
+        }
+}
+
+&--bottom{
+background-image: url(../images/bg-botton-mob.png);
+background-size: cover;
+}
+
 }
