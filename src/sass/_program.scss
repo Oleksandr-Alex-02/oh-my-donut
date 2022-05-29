@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.program__item {
+  position: relative;
+}
+
 .program__list {
   margin-bottom: 16px;
 }
@@ -78,11 +82,23 @@
     position: absolute;
     top: 0;
     left: 25px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/donut@2x-77.png');
+    }
   }
 
   &:nth-child(2)::before {
     background-image: url(../images/donut2-77.png);
     width: 78px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/donut2@2x-77.png');
+    }
   }
 }
 
@@ -90,11 +106,23 @@
   &:nth-child(1)::before {
     background-image: url(../images/donut3-77.png);
     width: 75px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/donut3@2x-77.png');
+    }
   }
 
   &:nth-child(2)::before {
     background-image: url(../images/donut4-77.png);
     width: 74px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/donut4@2x-77.png');
+    }
   }
 }
 
@@ -110,7 +138,7 @@
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 }
 
-.donut-item__title {
+.donut__title {
   font-family: $fontFamilyTitle;
   font-weight: 400;
   font-size: 18px;
@@ -119,7 +147,7 @@
   margin-bottom: 4px;
 }
 
-.donut-item__text {
+.donut__text {
   font-size: 14px;
   line-height: 1.21;
   text-align: center;

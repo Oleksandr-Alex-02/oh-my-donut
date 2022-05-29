@@ -1,4 +1,4 @@
-(() => {
+ (() => {
     const refs = {
       openModalBtn: document.querySelector("[data-mobile-open]"),
       closeModalBtn: document.querySelector("[data-mobile-close]"),
@@ -11,4 +11,15 @@
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
     }
-  })();
+})();
+  
+const menuButton = document.querySelector(".program__button")
+const headerNav = document.querySelector(".program__text--visible")
+menuButton.addEventListener("click", () => {
+    if (headerNav.classList.contains("is-open")) {
+        menuButton.textContent = "Read more"
+    } else {
+        menuButton.textContent = "Less"
+    }
+    headerNav.classList.toggle("is-open")
+})
