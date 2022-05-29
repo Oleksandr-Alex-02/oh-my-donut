@@ -1,0 +1,134 @@
+.program__title {
+  margin-bottom: 8px;
+
+  font-family: $fontFamilyTitle;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.program__list {
+  margin-bottom: 16px;
+}
+
+.program__text {
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program__text--visible {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+
+  &.is-open {
+    opacity: 1;
+    position: unset;
+  }
+}
+
+.program__button {
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-family: $fontFamilyTitle;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+
+  color: $btnColorPrimary;
+  background-color: transparent;
+  border: transparent;
+}
+
+.donut {
+  display: flex;
+  justify-content: space-between;
+}
+
+.donut__item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  width: 130px;
+  height: 165px;
+
+  &:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    background-image: url(../images/donut-77.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+  }
+
+  &:nth-child(2)::before {
+    background-image: url(../images/donut2-77.png);
+    width: 78px;
+  }
+}
+
+.donut__item--background {
+  &:nth-child(1)::before {
+    background-image: url(../images/donut3-77.png);
+    width: 75px;
+  }
+
+  &:nth-child(2)::before {
+    background-image: url(../images/donut4-77.png);
+    width: 74px;
+  }
+}
+
+.donut__forma {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fef3e4;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+}
+
+.donut-item__title {
+  font-family: $fontFamilyTitle;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.donut-item__text {
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.donut__icons {
+  margin-bottom: 10px;
+}
+
+.donut__list--second {
+  transform: translateY(30px);
+}
