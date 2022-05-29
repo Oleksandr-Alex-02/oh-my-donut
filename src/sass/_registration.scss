@@ -4,7 +4,7 @@
     text-align: center;
 
     padding: 33px 8px 31px 8px;
-    margin: 0;
+    margin: 0 auto;
 
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px 150px 0px 0px;
@@ -14,6 +14,7 @@
 
     @media screen and (min-width: 768px){
         display: flex;
+        align-items: center;
         max-width: 704px;
         height: 260px;
 
@@ -54,6 +55,12 @@
  .form__info {
      border-bottom: 1px solid rgba(171, 129, 108, 0.5);
      padding: 20px 0 20px 0;
+
+     @media screen and (min-width: 768px) {
+        border-bottom: 0;
+        border-right: 1px solid rgba(171, 129, 108, 0.5);
+        // padding: 30px 0 0 0;
+    }
  }
 
 .form__location {
@@ -62,32 +69,67 @@
     line-height: 1.22;
 
     margin-bottom: 20px;
+    color: $fontColorPrimary;
+
+    @media screen and (min-width: 768px) {
+        text-align: end;
+        padding: 0 32px 0 0;
+    }
 }
 
  .form__price {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.22;
+
+    @media screen and (min-width: 768px) {
+        // text-align: end;
+        justify-content: end;
     }
+}
 
 .form__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.21;
 
-    margin-top: 8px;
+    margin: 8px 0 20px 0;
+    color: $fontColorPrimary;
+
+    @media screen and (min-width: 768px) {
+
+        margin: 0 0 16px 24px;
+        text-align: start;
+    }
 }
-
-
 
 .form__form {
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin: 0 54px 0 24px;
+    }
+}
+.form__figuration {
+    max-width: 265px;
+    height: 22px;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 237px;
+        &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+    }
+
 }
 
 .form__input {
     width: 100%;
-    padding-top: 20px;
-
+  
     border: none;
     border-bottom: 1px solid $fontColorSecondary;
     
@@ -101,6 +143,10 @@
 
 .form__button {
     font-family: $fontFamilyTitle;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.26;
+
     padding: 8px 47px 9px 46px;
     border-radius: 25px;
     border: none;
