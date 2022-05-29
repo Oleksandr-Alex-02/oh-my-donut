@@ -1,27 +1,15 @@
 <header class="page-header">
     <div class="container container__page-header">
-        <a href id="main-page" >
+    <div class="header__wrap">
+        <a href id="logo">
             <svg class="logo">
                 <use href="./images/symbol-defs.svg#logo-tablet"></use>
             </svg>
         </a>
-        <thumb>
-            <img class="header__image" 
-                srcset="./images/header_mobile.jpg 130w,
-                          ./images/header_mobile@2x.jpg 260w"
-                src="./images/header_mobile.jpg"
-                alt="Donuts"
-                sizes="(min-width: 768px) 378px, (min-width: 320px) 130px">
-        </thumb>
-        <button class="menu-button" data-mobile-open>
-            <svg aria-label="Mobile menu switch" width="30" height="16" >
-                <use href="./images/symbol-defs.svg#burger"></use>
-            </svg>
-        </button>
         <h1 class="header__title">Donut Masterclass
-        with the Donut King</h1>
+            with the Donut King</h1>
         <h2 class="header__subtitle">Hosted by Eva Green</h2>
-        <button class="header__button form__button">Register</button>
+        <a class="header__link" href="#register">Register</a>
         <div class="social-links">
             <ul class="list">
                 <li class="social-links__item">
@@ -45,6 +33,21 @@
                         </svg>
                     </button>
                 </li>
-        </div>    
+        </div>
+    </div>
+            <thumb>
+                <img class="header__image" srcset="./images/header_mobile.png 132w,
+                                            ./images/header_mobile@2x.png 264w,
+                                            ./images/header_tab.png 380w,
+                                            ./images/header_tab@2x.png 760w,
+                                            ./images/header_desktop.png 795w,
+                                            ./images/header_desktop@2x.png 1590w" src="./images/header_mobile.png" alt="Donuts"
+                    sizes="(min-width: 1280px) 795px, (min-width: 768px) 380px, (min-width: 320px) 132px">
+            </thumb>
+    <button class="menu-button" data-mobile-open>
+        <svg aria-label="Mobile menu switch" width="30" height="16">
+            <use href="./images/symbol-defs.svg#burger"></use>
+        </svg>
+    </button>
     </div>
 </header>

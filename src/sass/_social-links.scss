@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: start;
+  }
 }
 
 .social-links__item:not(:last-child) {

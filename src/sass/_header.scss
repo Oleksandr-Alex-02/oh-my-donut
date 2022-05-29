@@ -1,6 +1,14 @@
 .page-header {
   padding-top: 8px;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 26px;
+  }
 }
 
 .container__page-header {
@@ -14,6 +22,10 @@
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .logo {
@@ -21,6 +33,16 @@
   width: 96px;
   height: 44px;
   margin: 0px auto 31px auto;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0px auto 16px 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 158px;
+    height: 81px;
+    margin-bottom: 41px;
+  }
 }
 
 .menu-button {
@@ -32,14 +54,31 @@
   background-color: transparent;
   cursor: pointer;
   color: currentColor;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .header__image {
   position: absolute;
   top: -58px;
-  left: -27px;
+  left: -10px;
   z-index: -1;
-  width: 130px;
+  width: 132px;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 380px;
+    top: -65px;
+    left: 288px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 793px;
+    left: 560px;
+    top: -196px;
+  }
 }
 
 .header__title {
@@ -49,16 +88,77 @@
   line-height: 1.266;
   text-align: center;
   margin-bottom: 8px;
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 490px;
+    font-size: 64px;
+    line-height: 1.015;
+    margin-bottom: 16px;
+  }
 }
 
 .header__subtitle {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  text-align: center;
+  text-align: left;
   margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.208;
+  }
 }
 
-.header__button {
+.header__link {
+  display: inline-block;
+  background-color: $btnColorPrimary;
+  color: $colorWhite;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 47px 9px 46px;
+  font-family: $fontFamilyTitle;
+  font-size: 18px;
+  line-height: 1.26;
+  cursor: pointer;
   margin: 0px auto 40px auto;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.26;
+    margin-bottom: 32px;
+  }
+}
+
+.header__wrap {
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 12px;
+    text-align: left;
+    margin: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 490px;
+  }
 }
