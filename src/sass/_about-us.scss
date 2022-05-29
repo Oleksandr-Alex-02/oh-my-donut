@@ -1,4 +1,4 @@
-.container__about-us {
+.about-us {
   padding-top: 5px;
   padding-bottom: 15px;
 }
@@ -15,7 +15,7 @@
   color: $fontColorPrimary;
 }
 
-.description-text {
+.about-us__description {
   font-family: $fontFamilyPrimary;
   font-size: 16px;
   line-height: 1.25;
@@ -26,11 +26,11 @@
   }
 }
 
-.button-read-me {
+.about-us__button {
   margin-top: 15px;
   padding: 0;
 
-  font-family: 'Caveat Brush';
+  font-family: $fontFamilyTitle;
   font-size: 18px;
   line-height: 1.27;
   text-align: center;
