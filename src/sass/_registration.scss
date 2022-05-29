@@ -1,5 +1,5 @@
 .form {
-    max-width: 280px;
+    width: 280px;
     height: 466px;
     text-align: center;
 
@@ -15,11 +15,16 @@
     @media screen and (min-width: 768px){
         display: flex;
         align-items: center;
-        max-width: 704px;
+        width: 704px;
         height: 260px;
 
         padding: 40px 61px 40px 61px;
         border-radius: 150px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 822px;
+        height: 260;
+        padding: 35px 107px 35px 105px;
     }
 }
 
@@ -59,7 +64,10 @@
      @media screen and (min-width: 768px) {
         border-bottom: 0;
         border-right: 1px solid rgba(171, 129, 108, 0.5);
-        // padding: 30px 0 0 0;
+    
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0;
     }
  }
 
@@ -68,12 +76,16 @@
     font-weight: 500;
     line-height: 1.22;
 
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     color: $fontColorPrimary;
 
     @media screen and (min-width: 768px) {
         text-align: end;
         padding: 0 32px 0 0;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        padding: 20px 32px 32px 0;
     }
 }
 
@@ -97,9 +109,12 @@
     color: $fontColorPrimary;
 
     @media screen and (min-width: 768px) {
-
         margin: 0 0 16px 24px;
         text-align: start;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+        margin: 0 0 13px 32px;
     }
 }
 
@@ -109,6 +124,9 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
         margin: 0 54px 0 24px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin: 0 23px 0 32px;
     }
 }
 .form__figuration {
