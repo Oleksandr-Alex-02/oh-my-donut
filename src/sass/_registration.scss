@@ -29,18 +29,20 @@
     @media screen and (min-width: 1200px) {
         width: 822px;
         height: 260;
-        padding: 35px 107px 35px 105px;
+        padding: 35px 104px 35px 104px;
     }
 }
-
-.form__caption {
+.form__title {
     font-size: 24px;
     font-weight: 400;
-    line-height: 2.71;
+    line-height: 1.26;
     font-family: $fontFamilyTitle;
 
     color: $fontColorPrimary;
+}
 
+.form__caption {
+    margin-bottom: 20px;
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -50,13 +52,8 @@
     }
 }
 
-.form__title {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.26;
-    font-family: $fontFamilyTitle;
-
-    color: $fontColorPrimary;
+.form__subject {
+    margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -65,16 +62,14 @@
 
 .form__info {
     border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-    padding: 20px 0 20px 0;
 
     @media screen and (min-width: 768px) {
         border-bottom: 0;
         border-right: 1px solid rgba(171, 129, 108, 0.5);
-
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 0;
+        padding-top: 20px;
     }
 }
 
@@ -83,7 +78,6 @@
     font-weight: 500;
     line-height: 1.22;
 
-    padding-bottom: 20px;
     color: $fontColorPrimary;
 
     @media screen and (min-width: 768px) {
@@ -93,25 +87,33 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 20px;
-        padding: 20px 32px 32px 0;
     }
 }
-
+.form__city {
+    @media screen and (min-width: 1200px) {
+        padding: 0px 32px 32px 0;
+        }
+}
 .form__price {
+    display: inline-block;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.22;
+    padding: 20px 0 20px 0;
 
     @media screen and (min-width: 768px) {
-        // text-align: end;
-        justify-content: end;
+        text-align: end;
+        padding: 32px 0 0 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0;
     }
 }
 
 .form__text {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.21;
+    line-height: 1.22;
 
     margin: 8px 0 20px 0;
     color: $fontColorPrimary;
@@ -144,6 +146,8 @@
     max-width: 265px;
     height: 22px;
 
+    color: rgba(171, 129, 108, 0.5);
+
     &:not(:last-child) {
         margin-bottom: 20px;
     }
@@ -155,7 +159,6 @@
             margin-bottom: 16px;
         }
     }
-
 }
 
 .form__input {
@@ -168,8 +171,11 @@
     font-weight: 400;
     line-height: 1.21;
 
-    color: rgba(171, 129, 108, 0.5);
     background-color: $bgColorPrimary;
+}
+
+input::placeholder {
+color: rgba(171, 129, 108, 0.5);
 }
 
 .form__button {
@@ -184,4 +190,8 @@
 
     color: $colorWhite;
     background-color: $fontColorSecondary;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 24px;
+    }
 }
