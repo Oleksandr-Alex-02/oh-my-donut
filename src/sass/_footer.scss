@@ -1,36 +1,8 @@
 
-.contacts-footer {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-
-    &__link {
-        font-size: 16px;
-        line-height: 1.25;
-        cursor: pointer;
-        color: #2E2520;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__link:hover,
-           :focus {
-           color: $colorWhite;
-    }
-           &__phone-icon {
-               width: 13px;
-               height: 12px;
-               margin-right: 4px;
-               fill: currentColor;
-           }
-    
-           &__location-icon {
-               width: 11px;
-               height: 13px;
-               margin-right: 4px;
-               fill: currentColor;
-           }
+.footer {
+    position: relative;
+    overflow: hidden;
 }
-
 .footer-socials {
     display: flex;
     justify-content: center;
@@ -61,15 +33,49 @@
         color: $colorWhite;
     }
     }
-
-
     &__icon {
     width: 16px;
     height: 16px;
     fill: currentColor;
     }
 }
+.contacts-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 
+    &__link {
+        font-size: 16px;
+        line-height: 1.25;
+        cursor: pointer;
+        color: #2E2520;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    :focus {
+        color: tomato;
+    }
+
+    &__phone-icon {
+        width: 13px;
+        height: 12px;
+        margin-right: 4px;
+        fill: currentColor;
+    }
+
+    &__location-icon {
+        width: 11px;
+        height: 13px;
+        margin-right: 4px;
+        fill: currentColor;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 101px;
+    }
+}
 address {
     display: flex;
     justify-content: space-between;
@@ -86,13 +92,11 @@ address {
     @media screen and (min-width: 768px) {
             position: absolute;
             z-index: -1;
-            bottom: -85px;
-            right: -103px;
+            bottom: -90px;
+            right: 5px;
             width: 207px;
             
     }
 }
-.footer-section{
-    position: relative;
-}
+
 
