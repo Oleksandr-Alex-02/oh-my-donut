@@ -1,3 +1,7 @@
+.registration {
+    padding-bottom: 32px;
+}
+
 .form {
     width: 280px;
     height: 466px;
@@ -12,7 +16,7 @@
 
     background-color: $bgColorPrimary;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
         width: 704px;
@@ -21,6 +25,7 @@
         padding: 40px 61px 40px 61px;
         border-radius: 150px;
     }
+
     @media screen and (min-width: 1200px) {
         width: 822px;
         height: 260;
@@ -39,7 +44,8 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
-    @media screen and (min-width: 768px){
+
+    @media screen and (min-width: 768px) {
         text-align: center;
     }
 }
@@ -51,25 +57,26 @@
     font-family: $fontFamilyTitle;
 
     color: $fontColorPrimary;
-    
+
     @media screen and (min-width: 768px) {
-    display: none;
+        display: none;
     }
 }
 
- .form__info {
-     border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-     padding: 20px 0 20px 0;
+.form__info {
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+    padding: 20px 0 20px 0;
 
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         border-bottom: 0;
         border-right: 1px solid rgba(171, 129, 108, 0.5);
-    
+
     }
+
     @media screen and (min-width: 1200px) {
         padding: 0;
     }
- }
+}
 
 .form__location {
     font-size: 18px;
@@ -83,13 +90,14 @@
         text-align: end;
         padding: 0 32px 0 0;
     }
+
     @media screen and (min-width: 1200px) {
         font-size: 20px;
         padding: 20px 32px 32px 0;
     }
 }
 
- .form__price {
+.form__price {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.22;
@@ -112,6 +120,7 @@
         margin: 0 0 16px 24px;
         text-align: start;
     }
+
     @media screen and (min-width: 1200px) {
         font-size: 18px;
         margin: 0 0 13px 32px;
@@ -125,10 +134,12 @@
         margin-bottom: 0;
         margin: 0 54px 0 24px;
     }
+
     @media screen and (min-width: 1200px) {
         margin: 0 23px 0 32px;
     }
 }
+
 .form__figuration {
     max-width: 265px;
     height: 22px;
@@ -136,21 +147,23 @@
     &:not(:last-child) {
         margin-bottom: 20px;
     }
+
     @media screen and (min-width: 768px) {
         width: 237px;
+
         &:not(:last-child) {
-                margin-bottom: 16px;
-            }
+            margin-bottom: 16px;
+        }
     }
 
 }
 
 .form__input {
     width: 100%;
-  
+
     border: none;
     border-bottom: 1px solid $fontColorSecondary;
-    
+
     font-size: 16px;
     font-weight: 400;
     line-height: 1.21;

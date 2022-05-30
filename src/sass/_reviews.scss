@@ -1,6 +1,6 @@
 .reviews {
     padding-bottom: 32px;
-    
+
     @media screen and (min-width: 768px) {
         height: 100%;
         padding-bottom: 40px;
@@ -17,9 +17,9 @@
 
     font-family: $fontFamilyTitle;
     font-size: 24px;
-    line-height: 1.25;    
+    line-height: 1.25;
     text-align: center;
-    
+
     color: $fontColorPrimary;
 
     @media screen and (min-width: 1280px) {
@@ -45,7 +45,7 @@
         min-height: 735px;
     }
 
-    
+
 }
 
 
@@ -56,7 +56,7 @@
 
 .reviews__item.behind__first {
     display: none;
-    
+
 
     @media screen and (min-width: 768px) {
         display: list-item;
@@ -81,12 +81,12 @@
     @media screen and (min-width: 1280px) {
         top: 150px;
     }
-    
+
 }
 
 .reviews__item.behind__third {
     display: none;
-    
+
 
     @media screen and (min-width: 768px) {
         display: list-item;

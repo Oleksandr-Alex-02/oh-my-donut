@@ -1,6 +1,7 @@
 .contacts-footer {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 
     &__link {
         font-size: 16px;
@@ -29,17 +30,17 @@
            }
 }
 
-.social-links {
+.footer-socials {
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
-}
+    margin-bottom: 30px;
 
-.social-links__item:not(:last-child) {
+
+    &__item:not(:last-child) {
     margin-right: 8px;
-}
+     }
 
-.social-links__link {
+    &__link {
     display: block;
     width: 24px;
     height: 24px;
@@ -57,11 +58,17 @@
         background-color: $colorBlack;
         color: $colorWhite;
     }
-}
+    }
 
 
-.social-links__icon {
+    &__icon {
     width: 16px;
     height: 16px;
     fill: currentColor;
+    }
+}
+
+address {
+    display: flex;
+    justify-content: space-between;
 }
