@@ -77,22 +77,22 @@ address {
 .footer-img {
     position: absolute;
     z-index: -1;
-    top: 3435px;
+    bottom: -30px;
     right: -35px;
     width: 113px; 
-    @media screen and (min-width: 480px) {
-            position: absolute;
-            z-index: -1;
-            top: 3110px;
-            right: -25px;
-            width: 113px;
-        }
+
+
 
     @media screen and (min-width: 768px) {
             position: absolute;
             z-index: -1;
-            top: 2525px;
-            right: -100px;
+            bottom: -85px;
+            right: -103px;
             width: 207px;
+            
     }
 }
+.footer-section{
+    position: relative;
+}
+
