@@ -5,8 +5,8 @@
 
 .contact__title {
   margin-bottom: 16px;
-  color: #2e2520;
-  font-family: 'Caveat Brush';
+  color: $fontColorPrimary;
+  font-family: $fontFamilyTitle;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.25;
@@ -19,7 +19,7 @@
 
 .contact__text {
   margin-bottom: 16px;
-  color: #2e2520;
+  color: $fontColorPrimary;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -28,16 +28,12 @@
 
 .contact__field {
   &:focus-within > .contact__input {
+    outline: none;
     border-color: transparent;
   }
 }
 
-.contact__label {
-  border-bottom: 1px solid #ab816c;
-}
-
 .contact__input {
-  margin: 0;
   margin-bottom: 20px;
   padding: 0;
   min-width: 280px;
@@ -47,6 +43,7 @@
   font-size: 16px;
   line-height: 1.25;
   border: transparent;
+  border-bottom: 1px solid $iconColorMark;
 
   &::placeholder {
     color: rgba(171, 129, 108, 0.5);
@@ -61,6 +58,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
     min-width: 394px;
   }
 }
@@ -68,10 +66,10 @@
 .contact__button {
   margin-top: 32px;
   padding: 9px 57px;
-  color: #ffffff;
-  background: #ab816c;
+  color: $colorWhite;
+  background: $iconColorMark;
   cursor: pointer;
-  font-family: 'Caveat Brush';
+  font-family: $fontFamilyTitle;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.28;
