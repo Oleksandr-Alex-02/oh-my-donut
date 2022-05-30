@@ -56,6 +56,10 @@ margin-top: 20px ;
 }
 
 .nav {
+@media (min-width: 1280px) {
+        padding-top: 20px;
+    }
+
 
     &__list {
         font-family: $fontFamilyPrimary ;
@@ -63,19 +67,35 @@ margin-top: 20px ;
         line-height: 1.22;
         font-weight: 500;
 
+        @media (min-width: 1280px) {
+                display: flex;  
+                color: $fontColorPrimary;
+                font-size: 18px;
+
+            }
+
     }
 
     &__item {
         margin-bottom: 45px;
 
+        @media (min-width: 1280px) {
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+
 
     }
 
     &__link {
-        color: $fontColorAccent;
+        color: $fontColorPrimary;
 
         &:hover {
-            color: #a1581a;
+            color: $fontColorAccent;
         }
 
 
