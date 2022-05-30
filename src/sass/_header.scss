@@ -46,21 +46,6 @@
   }
 }
 
-.menu-button {
-  position: absolute;
-  top: -4px;
-  right: 15px;
-  border: none;
-  padding: 12px 5px;
-  background-color: transparent;
-  cursor: pointer;
-  color: currentColor;
-
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
-}
-
 .header__image {
   position: absolute;
   top: -58px;

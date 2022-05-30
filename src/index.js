@@ -1,24 +1,25 @@
 //  Open menu
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-mobile-open]'),
-    closeModalBtn: document.querySelector('[data-mobile-close]'),
-    modal: document.querySelector('[data-mobile]'),
-  };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+
+const burger = document.querySelector('[burger]');
+const mobile = document.querySelector('[data-mobile]');
+
+if (burger) {
+  burger.addEventListener('click', onBurgerClick);
+  function onBurgerClick() {
+    mobile.classList.toggle('is-hidden'), burger.classList.toggle('open');
   }
-  const navLinks = document.querySelector('.nav__list');
+}
 
+
+
+  const navLinks = document.querySelector('.nav__list');
   if (navLinks) {
     navLinks.addEventListener('click', onMenuLinkClick);
     function onMenuLinkClick(e) {
       e.preventDefault();
-      toggleModal();
+      onBurgerClick();
       const att = e.target.getAttribute('data-goto');
       const gotoBlock = document.getElementById(att);
 
@@ -27,12 +28,10 @@
       window.scrollTo({
         top: gotoBlockValue,
         behavior: 'smooth',
-      });
-
-      // }
+      });     
     }
   }
-})();
+
 
 // Open text
 const menuButton = document.querySelector('.program__button');
@@ -45,3 +44,5 @@ menuButton.addEventListener('click', () => {
   }
   headerNav.classList.toggle('is-open');
 });
+
+
