@@ -1,11 +1,17 @@
 .about-us {
-  padding-top: 5px;
   padding-bottom: 15px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 22px;
   }
 }
 
@@ -17,6 +23,12 @@
   @media screen and (min-width: 1280px) {
     width: 502px;
     height: auto;
+  }
+  &--centered {
+    @media screen and (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
