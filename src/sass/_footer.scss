@@ -1,7 +1,6 @@
-
 .footer {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .footer-socials {
     display: flex;
@@ -12,39 +11,42 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 60px;
     }
-         @media screen and (min-width: 1280px) {
-             margin-bottom: 80px;
-         }
+  
+   @media screen and (min-width: 1280px) {
+       margin-bottom: 80px;
+   }
 
 
-    &__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 8px;
-     }
+  }
 
-    &__link {
+  &__link {
     display: block;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    color: #2E2520;
+    color: #2e2520;
     background-color: transparent;
     padding: 4px;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
-    &:focus {
-        background-color: $colorBlack;
-        color: $colorWhite;
+    &:focus,
+    &:active {
+      background-color: $iconColorPrimary;
+      color: #fef3e4;
     }
-    }
-    &__icon {
+  }
+  &__icon {
     width: 16px;
     height: 16px;
     fill: currentColor;
-    }
+  }
 }
 .contacts-footer {
     display: flex;
@@ -58,47 +60,58 @@
             padding-right: 305px;
     }
 
-    &__link {
-        font-size: 16px;
-        line-height: 1.25;
-        cursor: pointer;
-        color: #2E2520;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    &__link:hover,
-    :focus {
-        color: tomato;
-    }
+  &__link {
+    font-size: 16px;
+    line-height: 1.25;
+    cursor: pointer;
+    color: #2e2520;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    &__phone-icon {
-        width: 13px;
-        height: 12px;
-        margin-right: 4px;
-        fill: currentColor;
-    }
+  &__link:hover,
+  :focus {
+    color: tomato;
+  }
 
-    &__location-icon {
-        width: 11px;
-        height: 13px;
-        margin-right: 4px;
-        fill: currentColor;
-    }
+  &__phone-icon {
+    width: 13px;
+    height: 12px;
+    margin-right: 4px;
+    fill: currentColor;
+  }
+
+  &__location-icon {
+    width: 11px;
+    height: 13px;
+    margin-right: 4px;
+    fill: currentColor;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    margin-right: 101px;
+  }
 
 }
 address {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-img {
+  position: absolute;
+  z-index: -1;
+  bottom: -30px;
+  right: -35px;
+  width: 113px;
+
+  @media screen and (min-width: 768px) {
     position: absolute;
     z-index: -1;
     bottom: -30px;
     right: -35px;
     width: 113px; 
-
-
 
     @media screen and (min-width: 768px) {
             bottom: -90px;
@@ -111,6 +124,5 @@ address {
             right: -50px;
             width: 355px;  
         }
+
 }
-
-
