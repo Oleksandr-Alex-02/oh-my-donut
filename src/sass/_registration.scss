@@ -131,18 +131,24 @@
 }
 
 .form__form {
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    
+  }
+}
+.form__figur {
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin: 0 54px 0 24px;
+      margin-bottom: 0;
+      margin: 0 54px 0 24px;
   }
-
-  @media screen and (min-width: 1280px) {
-    margin: 0 23px 0 32px;
-  }
+    @media screen and (min-width: 1280px) {
+      margin: 0 23px 0 32px;
+    }
 }
-
 .form__figuration {
   max-width: 265px;
   height: 22px;
