@@ -3,10 +3,19 @@
   overflow: hidden;
 }
 .footer-socials {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+  
+   @media screen and (min-width: 1280px) {
+       margin-bottom: 80px;
+   }
+
 
   &__item:not(:last-child) {
     margin-right: 8px;
@@ -40,9 +49,17 @@
   }
 }
 .contacts-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+     
+    @media screen and (min-width: 768px) {
+        padding-right: 84px;
+    }
+    @media screen and (min-width: 1280px) {
+            padding-right: 305px;
+    }
+
 
   &__link {
     font-size: 16px;
@@ -72,9 +89,11 @@
     fill: currentColor;
   }
 
+
   @media screen and (min-width: 768px) {
     margin-right: 101px;
   }
+
 }
 address {
   display: flex;
@@ -90,8 +109,20 @@ address {
   @media screen and (min-width: 768px) {
     position: absolute;
     z-index: -1;
-    bottom: -90px;
-    right: 5px;
-    width: 207px;
-  }
+    bottom: -30px;
+    right: -35px;
+    width: 113px; 
+
+    @media screen and (min-width: 768px) {
+            bottom: -90px;
+            right: -15px;
+            width: 207px;
+            
+    }
+        @media screen and (min-width: 1280px) {
+            bottom: -168px;
+            right: -50px;
+            width: 355px;  
+        }
+
 }
