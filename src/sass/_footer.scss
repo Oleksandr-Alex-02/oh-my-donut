@@ -2,6 +2,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .footer-socials {
     display: flex;
     justify-content: center;
@@ -11,53 +12,56 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 60px;
     }
-  
-   @media screen and (min-width: 1280px) {
-       margin-bottom: 80px;
-   }
 
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  &__link {
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    color: #2e2520;
-    background-color: transparent;
-    padding: 4px;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $iconColorPrimary;
-      color: #fef3e4;
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 80px;
     }
-  }
-  &__icon {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-  }
+
+
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &__link {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        color: #2E2520;
+        background-color: transparent;
+        padding: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: $colorBlack;
+            color: $colorWhite;
+        }
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+    }
+
 }
+
 .contacts-footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-     
+
     @media screen and (min-width: 768px) {
         padding-right: 84px;
     }
+
     @media screen and (min-width: 1280px) {
-            padding-right: 305px;
+        padding-right: 305px;
     }
 
 
@@ -95,10 +99,12 @@
   }
 
 }
+
 address {
   display: flex;
   justify-content: space-between;
 }
+
 .footer-img {
   position: absolute;
   z-index: -1;
@@ -111,18 +117,19 @@ address {
     z-index: -1;
     bottom: -30px;
     right: -35px;
-    width: 113px; 
+    width: 113px;
 
     @media screen and (min-width: 768px) {
-            bottom: -90px;
-            right: -15px;
-            width: 207px;
-            
-    }
-        @media screen and (min-width: 1280px) {
-            bottom: -168px;
-            right: -50px;
-            width: 355px;  
-        }
+        bottom: -90px;
+        right: -15px;
+        width: 207px;
 
+    }
+
+    @media screen and (min-width: 1280px) {
+        bottom: -168px;
+        right: -50px;
+        width: 355px;
+    }
 }
+
