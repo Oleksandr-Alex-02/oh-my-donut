@@ -1,38 +1,32 @@
 //  Open menu
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-mobile-open]'),
-    closeModalBtn: document.querySelector('[data-mobile-close]'),
-    modal: document.querySelector('[data-mobile]'),
-  };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+const burger = document.querySelector('[burger]');
+const mobile = document.querySelector('[data-mobile]');
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+if (burger) {
+  burger.addEventListener('click', onBurgerClick);
+  function onBurgerClick() {
+    mobile.classList.toggle('is-hidden'), burger.classList.toggle('open');
   }
-  const navLinks = document.querySelector('.nav__list');
+}
 
-  if (navLinks) {
-    navLinks.addEventListener('click', onMenuLinkClick);
-    function onMenuLinkClick(e) {
-      e.preventDefault();
-      toggleModal();
-      const att = e.target.getAttribute('data-goto');
-      const gotoBlock = document.getElementById(att);
+const navLinks = document.querySelector('.nav__list');
+if (navLinks) {
+  navLinks.addEventListener('click', onMenuLinkClick);
+  function onMenuLinkClick(e) {
+    e.preventDefault();
+    onBurgerClick();
+    const att = e.target.getAttribute('data-goto');
+    const gotoBlock = document.getElementById(att);
 
-      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY;
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY;
 
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: 'smooth',
-      });
-
-      // }
-    }
+    window.scrollTo({
+      top: gotoBlockValue,
+      behavior: 'smooth',
+    });
   }
-})();
+}
 
 // Open text
 const menuButton = document.querySelector('.program__button');
@@ -51,10 +45,9 @@ const showButton = document.querySelector('.about-us__button');
 const hiddenText = document.querySelector('.about-us__text--visible');
 showButton.addEventListener('click', () => {
   if (hiddenText.classList.contains('is-open')) {
-   showButton.textContent = 'Read more';
+    showButton.textContent = 'Read more';
   } else {
-   showButton.textContent = 'Less';
+    showButton.textContent = 'Less';
   }
- hiddenText.classList.toggle('is-open');
+  hiddenText.classList.toggle('is-open');
 });
-

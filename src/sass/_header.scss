@@ -31,18 +31,20 @@
   }
 }
 
-.menu-button {
-  position: absolute;
-  top: -4px;
-  right: 15px;
-  border: none;
-  padding: 12px 5px;
-  background-color: transparent;
-  cursor: pointer;
-  color: currentColor;
+.logo {
+  display: block;
+  width: 96px;
+  height: 44px;
+  margin: 0px auto 31px auto;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0px auto 16px 0px;
+  }
 
   @media screen and (min-width: $desktop) {
-    display: none;
+    width: 158px;
+    height: 81px;
+    margin-bottom: 41px;
   }
 }
 
