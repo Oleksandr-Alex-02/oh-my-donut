@@ -6,16 +6,19 @@ const mobile = document.querySelector('[data-mobile]');
 if (burger) {
   burger.addEventListener('click', onBurgerClick);
   function onBurgerClick() {
-    mobile.classList.toggle('is-hidden'), burger.classList.toggle('open');
+    mobile.classList.toggle('is-hidden');
+    burger.classList.toggle('open');
   }
 }
 
 const navLinks = document.querySelector('.nav__list');
+const navLinksMenu = document.querySelector('[nav]');
+
 if (navLinks) {
   navLinks.addEventListener('click', onMenuLinkClick);
   function onMenuLinkClick(e) {
     e.preventDefault();
-    onBurgerClick();
+    
     const att = e.target.getAttribute('data-goto');
     const gotoBlock = document.getElementById(att);
 
@@ -27,6 +30,14 @@ if (navLinks) {
     });
   }
 }
+
+if (navLinksMenu) {
+  navLinksMenu.addEventListener('click', onMenuMobilLinckClick);
+  function onMenuMobilLinckClick(e) {
+  onBurgerClick();
+  }
+}
+
 
 // Open text
 const menuButton = document.querySelector('.program__button');
