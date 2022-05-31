@@ -15,16 +15,19 @@
 }
 
 .container__page-header {
-    position: relative;
-    min-width: $mobile;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+  position: relative;
+  min-width: $mobile;
+  max-width: 480px;
 
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
+  @media screen and (min-width: 480px) {
+    max-width: $tablet;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop;
+  }
+
 
     @media screen and (min-width: $desktop) {
         width: $desktop;
@@ -49,6 +52,14 @@
 }
 
 .header__image {
+
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  z-index: -1;
+  width: 132px;
+
+  @media screen and (min-width: $tablet) {
     position: absolute;
     top: -58px;
     left: -10px;
@@ -95,11 +106,22 @@
 }
 
 .header__subtitle {
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
+
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
     text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.208;
     margin-bottom: 32px;
 
     @media screen and (min-width: $tablet) {
@@ -145,17 +167,17 @@
 }
 
 .header__wrap {
-    width: 224px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: $tablet) {
-        padding-top: 12px;
-        text-align: left;
-        margin: 0px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding-top: 12px;
+    text-align: left;
+    margin: 0px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: 100%;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
 }

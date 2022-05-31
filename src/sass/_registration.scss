@@ -27,7 +27,7 @@
     border-radius: 150px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 822px;
     height: 260;
     padding: 35px 104px 35px 104px;
@@ -69,7 +69,7 @@
     border-right: 1px solid rgba(171, 129, 108, 0.5);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 20px;
   }
 }
@@ -86,12 +86,12 @@
     padding: 0 32px 0 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 20px;
   }
 }
 .form__city {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding: 0px 32px 32px 0;
   }
 }
@@ -106,7 +106,7 @@
     text-align: end;
     padding: 32px 0 0 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding: 0;
   }
 }
@@ -124,25 +124,31 @@
     text-align: start;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 18px;
     margin: 0 0 13px 32px;
   }
 }
 
 .form__form {
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    
+  }
+}
+.form__figur {
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin: 0 54px 0 24px;
+      margin-bottom: 0;
+      margin: 0 54px 0 24px;
   }
-
-  @media screen and (min-width: 1200px) {
-    margin: 0 23px 0 32px;
-  }
+    @media screen and (min-width: 1280px) {
+      margin: 0 23px 0 32px;
+    }
 }
-
 .form__figuration {
   max-width: 265px;
   height: 22px;
@@ -200,7 +206,7 @@ input::placeholder {
     filter: drop-shadow(0px 1px 17px #cf8764);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 24px;
   }
 }
