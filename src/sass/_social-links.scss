@@ -1,7 +1,6 @@
 .social-links {
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
 
   @media screen and (min-width: $tablet) {
     justify-content: start;
@@ -25,9 +24,10 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
-  &:focus {
-    background-color: $colorBlack;
-    color: $colorWhite;
+  &:focus,
+  &:active {
+    background-color: $iconColorPrimary;
+    color: #fef3e4;
   }
 }
 
