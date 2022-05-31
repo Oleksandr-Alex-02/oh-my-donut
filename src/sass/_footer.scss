@@ -6,8 +6,15 @@
 .footer-socials {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     position: relative;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+         @media screen and (min-width: 1280px) {
+             margin-bottom: 80px;
+         }
 
 
     &__item:not(:last-child) {
@@ -100,8 +107,8 @@ address {
             
     }
         @media screen and (min-width: 1280px) {
-            bottom: -140px;
-            right: -45px;
+            bottom: -168px;
+            right: -50px;
             width: 355px;  
         }
 }
