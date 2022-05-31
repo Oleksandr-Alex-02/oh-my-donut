@@ -64,14 +64,15 @@
         cursor: pointer;
         color: #2E2520;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__link:hover,
-    :focus {
+            :focus {
         color:$fontColorAccent;
+        filter: drop-shadow(0px 1px 5px #876655);
     }
-
     &__phone-icon {
         width: 13px;
         height: 12px;
@@ -112,5 +113,3 @@ address {
             width: 355px;  
         }
 }
-
-
