@@ -17,13 +17,14 @@
 .container__page-header {
   position: relative;
   min-width: $mobile;
+  max-width: 480px;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    max-width: $desktop;
   }
 
   @media screen and (min-width: $desktop) {
@@ -31,24 +32,26 @@
   }
 }
 
-.menu-button {
-  position: absolute;
-  top: -4px;
-  right: 15px;
-  border: none;
-  padding: 12px 5px;
-  background-color: transparent;
-  cursor: pointer;
-  color: currentColor;
+.logo {
+  display: block;
+  width: 96px;
+  height: 44px;
+  margin: 0px auto 31px auto;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0px auto 16px 0px;
+  }
 
   @media screen and (min-width: $desktop) {
-    display: none;
+    width: 158px;
+    height: 81px;
+    margin-bottom: 41px;
   }
 }
 
 .header__image {
   position: absolute;
-  top: -58px;
+  top: -35px;
   left: -10px;
   z-index: -1;
   width: 132px;
@@ -97,11 +100,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  text-align: left;
+  text-align: center;
   margin-bottom: 32px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 20px;
+    text-align: left;
   }
 
   @media screen and (min-width: $desktop) {
