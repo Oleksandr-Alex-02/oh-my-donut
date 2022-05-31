@@ -101,4 +101,76 @@
       color: $fontColorAccent;
     }
   }
+
+}
+
+.menu-button {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  border: none;
+  width: 30px;
+  height: 15px;
+
+  background-color: transparent;
+  cursor: pointer;
+  color: currentColor;
+  z-index: 50;
+
+  &.open {
+    width: 20px;
+
+
+  }
+
+
+  &.open .burger {
+    top: 50%;
+    transform: scale(0) translate(0, -50%);
+  }
+
+  &.open::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  &.open::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+  }
+
+  &::after,
+  &::before,
+  & .burger {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $fontColorPrimary;
+
+  }
+
+  &::after,
+  &::before {
+    content: "";
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+
+
+}
+
+.burger {
+  top: 50%;
+  transform: scale(1) translate(0, -50%);
 }
