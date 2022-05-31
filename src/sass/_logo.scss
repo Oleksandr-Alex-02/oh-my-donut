@@ -11,15 +11,15 @@
   height: 44px;
   margin: 0px auto 31px auto;
 
-
   @media screen and (min-width: $tablet) {
-    margin: 0px auto 16px 0px;
+    display: inline-block;
+    margin: 0px;
   }
 
   @media screen and (min-width: $desktop) {
     display: inline-block;
     width: 158px;
     height: 81px;
-    margin-bottom: 41px;
+    margin-right: 162px;
   }
 }
