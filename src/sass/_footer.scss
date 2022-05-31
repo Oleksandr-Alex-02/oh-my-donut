@@ -43,6 +43,13 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+     
+    @media screen and (min-width: 768px) {
+        padding-right: 84px;
+    }
+    @media screen and (min-width: 1280px) {
+            padding-right: 305px;
+    }
 
     &__link {
         font-size: 16px;
@@ -72,9 +79,6 @@
         fill: currentColor;
     }
 
-    @media screen and (min-width: 768px) {
-        margin-right: 101px;
-    }
 }
 address {
     display: flex;
@@ -90,13 +94,16 @@ address {
 
 
     @media screen and (min-width: 768px) {
-            position: absolute;
-            z-index: -1;
             bottom: -90px;
-            right: 5px;
+            right: -15px;
             width: 207px;
             
     }
+        @media screen and (min-width: 1280px) {
+            bottom: -140px;
+            right: -45px;
+            width: 355px;  
+        }
 }
 
 
