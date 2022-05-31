@@ -1,81 +1,81 @@
 .contact {
   text-align: center;
   padding-bottom: 32px;
-}
 
-.contact__title {
-  margin-bottom: 16px;
-  color: #2e2520;
-  font-family: 'Caveat Brush';
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.25;
-  text-align: center;
+  &__title {
+    margin-bottom: 16px;
+    color: $fontColorPrimary;
+    font-family: $fontFamilyTitle;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
 
-  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    color: $fontColorPrimary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  &__input {
     margin-bottom: 20px;
-  }
-}
-
-.contact__text {
-  margin-bottom: 16px;
-  color: #2e2520;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-}
-
-.contact__field {
-  &:focus-within > .contact__input {
-    border-color: transparent;
-  }
-}
-
-.contact__label {
-  border-bottom: 1px solid #ab816c;
-}
-
-.contact__input {
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-  min-width: 280px;
-  height: 20px;
-  color: rgba(171, 129, 108, 0.5);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  border: transparent;
-
-  &::placeholder {
+    padding: 0;
+    min-width: 280px;
+    height: 20px;
     color: rgba(171, 129, 108, 0.5);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
+    background-color: inherit;
+    border: transparent;
+    border-bottom: 1px solid $iconColorMark;
+
+    &::placeholder {
+      color: rgba(171, 129, 108, 0.5);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+      min-width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+      min-width: 394px;
+    }
   }
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 16px;
-    min-width: 336px;
-  }
+  &__button {
+    margin-top: 32px;
+    padding: 9px 57px;
+    color: $colorWhite;
+    background: $iconColorMark;
+    cursor: pointer;
+    font-family: $fontFamilyTitle;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
 
-  @media screen and (min-width: 1280px) {
-    min-width: 394px;
-  }
-}
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.contact__button {
-  margin-top: 32px;
-  padding: 9px 57px;
-  color: #ffffff;
-  background: #ab816c;
-  cursor: pointer;
-  font-family: 'Caveat Brush';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.28;
-  text-align: center;
-  border-radius: 25px;
-  border: none;
+    &:hover,
+    &:focus,
+    &:active {
+      filter: drop-shadow(0px 1px 17px #cf8764);
+    }
+  }
 }

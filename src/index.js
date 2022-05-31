@@ -1,7 +1,5 @@
 //  Open menu
 
-
-
 const burger = document.querySelector('[burger]');
 const mobile = document.querySelector('[data-mobile]');
 
@@ -12,26 +10,23 @@ if (burger) {
   }
 }
 
+const navLinks = document.querySelector('.nav__list');
+if (navLinks) {
+  navLinks.addEventListener('click', onMenuLinkClick);
+  function onMenuLinkClick(e) {
+    e.preventDefault();
+    onBurgerClick();
+    const att = e.target.getAttribute('data-goto');
+    const gotoBlock = document.getElementById(att);
 
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY;
 
-  const navLinks = document.querySelector('.nav__list');
-  if (navLinks) {
-    navLinks.addEventListener('click', onMenuLinkClick);
-    function onMenuLinkClick(e) {
-      e.preventDefault();
-      onBurgerClick();
-      const att = e.target.getAttribute('data-goto');
-      const gotoBlock = document.getElementById(att);
-
-      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY;
-
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: 'smooth',
-      });     
-    }
+    window.scrollTo({
+      top: gotoBlockValue,
+      behavior: 'smooth',
+    });
   }
-
+}
 
 // Open text
 const menuButton = document.querySelector('.program__button');
@@ -45,4 +40,14 @@ menuButton.addEventListener('click', () => {
   headerNav.classList.toggle('is-open');
 });
 
-
+// копія коду Open text для About-us
+const showButton = document.querySelector('.about-us__button');
+const hiddenText = document.querySelector('.about-us__text--visible');
+showButton.addEventListener('click', () => {
+  if (hiddenText.classList.contains('is-open')) {
+    showButton.textContent = 'Read more';
+  } else {
+    showButton.textContent = 'Less';
+  }
+  hiddenText.classList.toggle('is-open');
+});

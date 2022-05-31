@@ -1,5 +1,9 @@
 .program {
   padding-bottom: 50px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 26px;
+  }
 }
 
 .wrap {
@@ -15,6 +19,14 @@
     align-items: flex-start;
     width: 100%;
     max-width: 336px;
+    margin-right: 32px;
+    padding-top: 37px;
+
+    @media screen and (min-width: $desktop) {
+      max-width: 392px;
+      margin-right: 142px;
+      padding-top: 0;
+    }
   }
 }
 
@@ -26,6 +38,11 @@
   font-size: 24px;
   line-height: 1.25;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.81;
+  }
 }
 
 .program__item {
@@ -45,6 +62,16 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.22;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .program__text--visible {
@@ -52,6 +79,11 @@
   opacity: 0;
   top: 0;
   left: 0;
+
+  @media screen and (min-width: $desktop) {
+    opacity: 1;
+    position: unset;
+  }
 
   &.is-open {
     opacity: 1;
@@ -72,22 +104,46 @@
   background-color: transparent;
   border: transparent;
 
+  &:hover {
+    color: #876655;
+  }
+
+  &:active {
+    color: #674d40;
+  }
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 }
 
 .donut {
   display: flex;
-  justify-content: space-between;
-
-  @media screen and (min-width: 480px) {
-    justify-content: space-around;
-  }
+  justify-content: center;
 
   @media screen and (min-width: $tablet) {
     width: 100%;
-    justify-content: space-around;
+    padding-bottom: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.donut__list {
+  margin-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    margin-right: 33px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 140px;
   }
 }
 
@@ -105,7 +161,15 @@
   }
 
   @media screen and (min-width: $tablet) {
-    justify-content: flex-start;
+    width: 152px;
+    height: 188px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 180px;
+    height: 220px;
+    margin-bottom: 40px;
   }
 
   &::before {
@@ -116,19 +180,49 @@
     width: 77px;
     height: 80px;
     position: absolute;
-    top: 0;
+    bottom: 85px;
     left: 25px;
 
     @media screen and (min-width: $tablet) {
       background-image: url(../images/donut-80.png);
       width: 82px;
       height: 90px;
+      left: 35px;
+      bottom: 98px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/donut-97.png);
+      width: 97px;
+      height: 107px;
+      left: 41px;
+      bottom: 116px;
     }
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/donut@2x-77.png');
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut@2x-80.png');
+        }
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut@2x-97.png');
+        }
+      }
     }
   }
 
@@ -146,6 +240,36 @@
       background-image: url(../images/donut2-80.png);
       width: 74px;
       height: 82px;
+      left: 39px;
+      bottom: 104px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut2@2x-80.png');
+        }
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/donut2-97.png);
+      width: 88px;
+      height: 97px;
+      left: 46px;
+      bottom: 123px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut2@2x-97.png');
+        }
+      }
     }
   }
 }
@@ -165,6 +289,36 @@
       background-image: url(../images/donut3-80.png);
       width: 69px;
       height: 77px;
+      left: 40px;
+      bottom: 102px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/donut3-97.png);
+      width: 97px;
+      height: 107px;
+      left: 48px;
+      bottom: 123px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut3@2x-80.png');
+        }
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut3@2x-97.png');
+        }
+      }
     }
   }
 
@@ -182,6 +336,46 @@
       background-image: url(../images/donut4-80.png);
       width: 70px;
       height: 78px;
+      left: 41px;
+      bottom: 104px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut4@2x-80.png');
+        }
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut3@2x-97.png');
+        }
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/donut4-97.png);
+      width: 83px;
+      height: 92px;
+      left: 49px;
+      bottom: 123px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/donut4@2x-97.png');
+        }
+      }
     }
   }
 }
@@ -201,6 +395,11 @@
     width: 152px;
     height: 152px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .donut__title {
@@ -213,13 +412,26 @@
   color: $colorBlack;
   margin-bottom: 4px;
 
+  .donut__item:last-child & {
+    margin-bottom: 14px;
+  }
+
   @media screen and (min-width: $tablet) {
     .donut__item:first-child & {
       margin-bottom: 8px;
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.25;
+
+    .donut__item:first-child & {
+      margin-bottom: 16px;
+    }
 
     .donut__item:last-child & {
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
   }
 }
@@ -230,6 +442,11 @@
   text-align: center;
   color: $colorBlack;
   margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .donut__icons {
@@ -248,11 +465,27 @@
       margin-bottom: 14px;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 25px;
+    height: 25px;
+    .donut__item:first-child & {
+      margin-bottom: 16px;
+    }
+
+    .donut__item:last-child & {
+      margin-bottom: 16px;
+    }
+  }
 }
 .donut__list--second {
-  transform: translateY(30px);
+  margin-top: 30px;
 
   @media screen and (min-width: $tablet) {
-    transform: translateY(50px);
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 125px;
   }
 }

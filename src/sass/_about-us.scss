@@ -49,15 +49,18 @@
 }
 
 .about-us__title {
-  margin-top: 15px;
   margin-bottom: 10px;
 
   font-family: $fontFamilyTitle;
   font-size: 24px;
   line-height: 1.25;
-  text-align: center;
 
   color: $fontColorPrimary;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-top: 15px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 15px;
@@ -70,16 +73,16 @@
     line-height: 1.81;
   }
 }
-
+.about-us__description {
+  position: relative;
+}
 .about-us__text {
   font-family: $fontFamilyPrimary;
   font-size: 16px;
   line-height: 1.25;
   color: $fontColorPrimary;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;
@@ -88,11 +91,13 @@
     &:not(:last-child) {
       margin-bottom: 35px;
     }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .about-us__button {
-  margin-top: 15px;
   padding: 0;
 
   font-family: $fontFamilyTitle;
@@ -112,5 +117,23 @@
 
   @media screen and (min-width: 1280px) {
     display: none;
+  }
+}
+
+.about-us__text--visible {
+  @media screen and (max-width: 1279px) {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+
+    &.is-open {
+      opacity: 1;
+      position: unset;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    opacity: 1;
   }
 }
