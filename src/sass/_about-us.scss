@@ -1,11 +1,6 @@
 .about-us {
+  position: relative;
   padding-bottom: 15px;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-bottom: 40px;
@@ -15,6 +10,13 @@
   }
 }
 
+.about-us__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .about-us__img {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 337px;
@@ -135,5 +137,18 @@
 
   @media screen and (min-width: 1280px) {
     opacity: 1;
+  }
+}
+
+.about-us__img-spoon {
+  position: absolute;
+  z-index: -1;
+  width: 178px;
+  height: auto;
+  left: -122px;
+  top: -71px;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
   }
 }
