@@ -13,7 +13,7 @@
 }
 .form {
   z-index: 999;
-
+position: relative;
   width: 280px;
   height: 466px;
   text-align: center;
@@ -231,12 +231,12 @@ input::placeholder {
   @media screen and (min-width: 768px) {
     position: absolute;
     z-index: 10;
-    top: -60px;
+    top: -50px;
     left: -30px;
   }
   @media screen and (min-width: 1280px) {
     top: -20px;
-    left: 50px;
+    left: 80px;
   }
 }
 .img__confetti-tablet {
@@ -261,7 +261,7 @@ input::placeholder {
   }
 
   position: absolute;
-  bottom: -300px;
+  bottom: -290px;
   right: 0;
 
 }
