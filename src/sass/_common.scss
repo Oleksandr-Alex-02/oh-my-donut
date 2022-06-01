@@ -1,33 +1,69 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     color: $fontColorPrimary;
     background-color: $bgColorPrimary;
-
 }
 
 .container {
-
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
     width: 100%;
 
     @media (min-width: 320px) {
-        max-width: 320px;
-    }
-
-    @media (min-width: 480px) {
         max-width: 480px;
     }
 
+    @media (min-width: 480px) {
+        max-width: 768px;
+    }
+
     @media (min-width: 768px) {
+        padding: 0 32px;
         max-width: 768px;
     }
 
     @media (min-width: 1280px) {
+        padding: 0 16px;
         max-width: 1280px;
     }
+}
+
+.background__top {
+    background-image: url(../images/bg-top-mob.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    position: relative;
+    z-index: -10;
+    
+
+
+    @media (min-width: 768px) {
+        background-image: url(../images/bg-top-tablet.png);
+        }
+    @media (min-width: 1280px) {
+        background-image: url(../images/bg-top-desktop.png);
+        }
+
+}
+
+.background__bottom {
+    background-image: url(../images/bg-botton-mob.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: -10;
+
+        @media (min-width: 768px) {
+            background-image: url(../images/bg-botton-tablet.png);
+        }
 }
