@@ -1,25 +1,33 @@
 <section id="idContacts" class="contact container">
   <h2 class="contact__title">Contact</h2>
   <p class="contact__text">We will answer any question!</p>
-  <p class="contact__field">
-    <label class="contact__label">
-      <input
-        class="contact__input"
-        type="email"
-        name="mail"
-        placeholder="Email"
-      />
-    </label>
-  </p>
-  <p class="contact__field">
-    <label class="contact__label">
-      <input
-        class="contact__input"
-        type="text"
-        name="question"
-        placeholder="Type your question"
-      />
-    </label>
-  </p>
-  <button class="contact__button" type="submit">Send</button>
+  <form>
+    <p class="contact__field">
+      <label class="contact__label">
+        <input
+          class="contact__input"
+          type="email"
+          name="mail"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please Enter Valid E-mail"
+          required
+        />
+      </label>
+    </p>
+    <p class="contact__field">
+      <label class="contact__label">
+        <input
+          class="contact__input"
+          type="text"
+          name="question"
+          placeholder="Type your question"
+          pattern="[\x1F-\xBF]*"
+          title="Please Enter Your Question"
+          required
+        />
+      </label>
+    </p>
+    <button class="contact__button" type="submit">Send</button>
+  </form>
 </section>
