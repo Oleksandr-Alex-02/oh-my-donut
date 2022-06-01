@@ -1,6 +1,34 @@
 <section class="registration" id="idregistration">
-  <div class="container">
+  <div class="container container__form">
     <h2 class="form__title form__caption">Registration</h2>
+    <picture class="img__donut">
+      <source
+        srcset="./images/donut_reg.png 1x, ./images/donut_reg@2x.png 2x"
+        type="image/png"
+      />
+      <img src="./images/donut_reg.png" alt="donut" />
+    </picture>
+    <picture class="img__confetti-tablet">
+      <source
+        srcset="
+          ./images/confetti-tablet.png    1x,
+          ./images/confetti-tablet@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img src="./images/confetti-tablet.png" alt="confetti" />
+    </picture>
+    <picture class="img__confetti-desktop">
+      <source
+        srcset="
+          ./images/confetti-desktop.png    1x,
+          ./images/confetti-desktop@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img src="./images/confetti-desktop.png" alt="confetti" />
+    </picture>
+
     <div class="form">
       <h2 class="form__title form__subject">Registration</h2>
       <div class="form__info">
@@ -14,7 +42,6 @@
           for registration
         </p>
         <form class="form__form">
-
           <div class="form__figur">
             <div class="form__figuration">
               <label>
@@ -52,7 +79,6 @@
                 />
               </label>
             </div>
-
           </div>
           <button class="form__button" type="submit">Register</button>
         </form>
