@@ -97,8 +97,8 @@
 
 .menu-button {
   position: absolute;
-  top: 8px;
-  right: 15px;
+  top: 16px;
+  right: 20px;
   border: none;
   width: 30px;
   height: 15px;
@@ -108,6 +108,10 @@
   color: currentColor;
   z-index: 50;
 
+  @media screen and (min-width: 480px) {
+      top: 32px;
+        right: 32px;
+    }
   &.open {
     width: 20px;
   }
