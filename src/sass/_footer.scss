@@ -1,7 +1,3 @@
-.footer {
-    position: relative;
-    overflow: hidden;
-}
 
 .footer-socials {
     display: flex;
@@ -61,7 +57,10 @@
     }
 
     @media screen and (min-width: 1280px) {
-        padding-right: 305px;
+
+            padding-right: 305px;
+            padding-left: 112px;
+
     }
 
   &__link {
