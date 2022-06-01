@@ -37,33 +37,39 @@ body {
 }
 
 .background__top {
-    background-image: url(../images/bg-top-mob.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
     position: relative;
-    z-index: -10;
-    
+    overflow: hidden;
+
+    // background-image: url(../images/bg-top-mob.png);
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // background-size: contain;
+    // position: relative;
+    // z-index: -10;
 
 
-    @media (min-width: 768px) {
-        background-image: url(../images/bg-top-tablet.png);
-        }
-    @media (min-width: 1280px) {
-        background-image: url(../images/bg-top-desktop.png);
-        }
+
+    // @media (min-width: 768px) {
+    //     background-image: url(../images/bg-top-tablet.png);
+    //     }
+    // @media (min-width: 1280px) {
+    //     background-image: url(../images/bg-top-desktop.png);
+    //     }
 
 }
 
 .background__bottom {
-    background-image: url(../images/bg-botton-mob.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        z-index: -10;
+    position: relative;
+    overflow: hidden;
 
-        @media (min-width: 768px) {
-            background-image: url(../images/bg-botton-tablet.png);
-        }
+    // background-image: url(../images/bg-botton-mob.png);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;
+    //     position: relative;
+    //     z-index: -10;
+
+    //     @media (min-width: 768px) {
+    //         background-image: url(../images/bg-botton-tablet.png);
+    //     }
 }

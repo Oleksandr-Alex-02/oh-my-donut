@@ -1,4 +1,5 @@
 .page-header {
+
   padding-top: 8px;
   padding-bottom: 5px;
   text-align: center;
@@ -53,91 +54,91 @@
 }
 
 .header__title {
-    font-family: $fontFamilyTitle;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.266;
-    text-align: center;
-    margin-bottom: 8px;
-    width: 224px;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: $fontFamilyTitle;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.266;
+  text-align: center;
+  margin-bottom: 8px;
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: $tablet) {
-        display: block;
-        text-align: left;
-    }
+  @media screen and (min-width: $tablet) {
+    display: block;
+    text-align: left;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: 490px;
-        font-size: 64px;
-        line-height: 1.015;
-        margin-bottom: 16px;
-        margin-left: 0px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 490px;
+    font-size: 64px;
+    line-height: 1.015;
+    margin-bottom: 16px;
+    margin-left: 0px;
+  }
 }
 
 .header__subtitle {
 
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    text-align: center;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.208;
     margin-bottom: 32px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 20px;
-        text-align: left;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        font-size: 24px;
-        line-height: 1.208;
-        margin-bottom: 32px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 20px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        font-size: 24px;
-        line-height: 1.208;
-        margin-bottom: 32px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.208;
+    margin-bottom: 32px;
+  }
 
 }
 
 .header__link {
-    display: inline-block;
-    background-color: $btnColorPrimary;
-    color: $colorWhite;
-    border: none;
-    border-radius: 25px;
-    padding: 8px 47px 9px 46px;
-    font-family: $fontFamilyTitle;
-    font-size: 18px;
+  display: inline-block;
+  background-color: $btnColorPrimary;
+  color: $colorWhite;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 47px 9px 46px;
+  font-family: $fontFamilyTitle;
+  font-size: 18px;
+  line-height: 1.26;
+  cursor: pointer;
+  margin: 0px auto 40px auto;
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    filter: drop-shadow(0px 1px 17px #cf8764);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
     line-height: 1.26;
-    cursor: pointer;
-    margin: 0px auto 40px auto;
-    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus,
-    &:active {
-        filter: drop-shadow(0px 1px 17px #cf8764);
-    }
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 20px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        font-size: 24px;
-        line-height: 1.26;
-        margin-bottom: 32px;
-    }
+    margin-bottom: 32px;
+  }
 }
 
 .header__wrap {
