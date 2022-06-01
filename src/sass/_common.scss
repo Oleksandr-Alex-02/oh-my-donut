@@ -12,6 +12,7 @@ body {
     background-color: $bgColorPrimary;
 }
 
+
 .container {
     margin: 0 auto;
     padding: 0 20px;
@@ -40,36 +41,29 @@ body {
     position: relative;
     overflow: hidden;
 
-    // background-image: url(../images/bg-top-mob.png);
-    // background-repeat: no-repeat;
-    // background-position: top;
-    // background-size: contain;
-    // position: relative;
-    // z-index: -10;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-image: url(/src/images/background/bg-top-mob.png);
 
+    @media (min-width: 480px) {
+        background-size: cover;
+        background-image: url(/src/images/background/bg-top-mob.png);
+    }
 
+    @media (min-width: 768px) {
+        background-size: contain;
+        background-image: url(/src/images/background/bg-top-tablet.png);
+    }
 
-    // @media (min-width: 768px) {
-    //     background-image: url(../images/bg-top-tablet.png);
-    //     }
-    // @media (min-width: 1280px) {
-    //     background-image: url(../images/bg-top-desktop.png);
-    //     }
+    @media (min-width: 1000px) {
+        background-size: cover;
+        background-image: url(/src/images/background/bg-top-desktop.png);
+    }
 
 }
 
 .background__bottom {
     position: relative;
     overflow: hidden;
-
-    // background-image: url(../images/bg-botton-mob.png);
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    //     background-size: cover;
-    //     position: relative;
-    //     z-index: -10;
-
-    //     @media (min-width: 768px) {
-    //         background-image: url(../images/bg-botton-tablet.png);
-    //     }
 }
