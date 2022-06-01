@@ -12,7 +12,7 @@
   position: relative;
 }
 .form {
-  z-index: 100;
+  z-index: 999;
 
   width: 280px;
   height: 466px;
@@ -223,6 +223,8 @@ input::placeholder {
 }
 
 .img__donut {
+  z-index: 10;
+  
   @media screen and (max-width: 767px) {
     display: none;
     }
@@ -238,22 +240,22 @@ input::placeholder {
   }
 }
 .img__confetti-tablet {
-  width: 190px;
-  height: 345px;
+  z-index: 20;
 
   @media screen and (max-width: 767px) {
       display: none;
     }
   position: absolute;
-  bottom: -100px;
-  right: 90px;
+  bottom: -140px;
+  right: 0px;
 
   @media screen and (min-width: 1280px) {
     display: none;
 }
 }
 .img__confetti-desktop {
- 
+   z-index: 30;
+
   @media screen and (max-width: 1279px) {
     display: none;
   }
