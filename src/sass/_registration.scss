@@ -1,9 +1,17 @@
 .registration {
   padding-bottom: 32px;
-}
 
-.form {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 78px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 160px;
+  }
+}
+.container__form {
   position: relative;
+}
+.form {
   z-index: 100;
 
   width: 280px;
@@ -221,12 +229,12 @@ input::placeholder {
   @media screen and (min-width: 768px) {
     position: absolute;
     z-index: 10;
-    top: -80px;
-    left: -80px;
+    top: -60px;
+    left: -30px;
   }
   @media screen and (min-width: 1280px) {
-    top: -120px;
-    left: -120px;
+    top: -20px;
+    left: 50px;
   }
 }
 .img__confetti-tablet {
@@ -237,8 +245,8 @@ input::placeholder {
       display: none;
     }
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -100px;
+  right: 90px;
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -251,7 +259,7 @@ input::placeholder {
   }
 
   position: absolute;
-  bottom: 0;
+  bottom: -300px;
   right: 0;
 
 }
