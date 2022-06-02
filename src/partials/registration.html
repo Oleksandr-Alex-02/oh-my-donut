@@ -2,22 +2,34 @@
   <div class="container container__form">
     <h2 class="form__title form__caption">Registration</h2>
     <picture class="img__donut">
-      <source srcset="./images/donut_reg.png 1x, ./images/donut_reg@2x.png 2x" type="image/png" />
-      <img src="./images/donut_reg.png" alt="donut" />
+      <source
+        srcset="
+          ./images/registration/donut_reg.png    1x,
+          ./images/registration/donut_reg@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img src="./images/registration/donut_reg.png" alt="donut" />
     </picture>
     <picture class="img__confetti-tablet">
-      <source srcset="
-          ./images/confetti-tablet.png    1x,
-          ./images/confetti-tablet@2x.png 2x
-        " type="image/png" />
-      <img src="./images/confetti-tablet.png" alt="confetti" />
+      <source
+        srcset="
+          ./images/registration/confetti-tablet.png    1x,
+          ./images/registration/confetti-tablet@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img src="./images/registration/confetti-tablet.png" alt="confetti" />
     </picture>
     <picture class="img__confetti-desktop">
-      <source srcset="
-          ./images/confetti-desktop.png    1x,
-          ./images/confetti-desktop@2x.png 2x
-        " type="image/png" />
-      <img src="./images/confetti-desktop.png" alt="confetti" />
+      <source
+        srcset="
+          ./images/registration/confetti-desktop.png    1x,
+          ./images/registration/confetti-desktop@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img src="./images/registration/confetti-desktop.png" alt="confetti" />
     </picture>
 
     <div class="form">
@@ -36,20 +48,41 @@
           <div class="form__figur">
             <div class="form__figuration">
               <label>
-                <input class="form__input" type="text" name="username" placeholder="Your name" required
-                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Your nickname must be two words separated by a space" />
+                <input
+                  class="form__input"
+                  type="text"
+                  name="username"
+                  placeholder="Your name"
+                  required
+                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                  title="Your nickname must be two words separated by a space"
+                />
               </label>
             </div>
             <div class="form__figuration">
               <label>
-                <input class="form__input" type="tel" name="phone-namber" placeholder="Phone number" required
-                  pattern="[0-9]{12}" title="Your number must contain 12 digits +38 098 000 00 00" />
+                <input
+                  class="form__input"
+                  type="tel"
+                  name="phone-namber"
+                  placeholder="Phone number"
+                  required
+                  pattern="[0-9]{12}"
+                  title="Your number must contain 12 digits +38 098 000 00 00"
+                />
               </label>
             </div>
             <div class="form__figuration">
               <label>
-                <input class="form__input" type="email" name="email" placeholder="Email" required
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please Enter Valid E-mail" />
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Please Enter Valid E-mail"
+                />
               </label>
             </div>
           </div>

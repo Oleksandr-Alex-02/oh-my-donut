@@ -1,6 +1,5 @@
 .registration {
-  padding-bottom: 32px;
-
+   padding-bottom: 32px;
   @media screen and (min-width: 768px) {
     padding-bottom: 78px;
   }
@@ -15,7 +14,6 @@
 }
 
 .form {
-
   position: relative;
   width: 280px;
   height: 466px;
@@ -46,191 +44,183 @@
     height: 260;
     padding: 35px 104px 35px 104px;
   }
-}
 
-.form__title {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.26;
-  font-family: $fontFamilyTitle;
-
-  color: $fontColorPrimary;
-}
-
-.form__caption {
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 767px) {
-    display: none;
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.26;
+    font-family: $fontFamilyTitle;
+  
+    color: $fontColorPrimary;
   }
 
-  @media screen and (min-width: 768px) {
-    text-align: center;
-  }
-}
-
-.form__subject {
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.form__info {
-  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-
-  @media screen and (min-width: 768px) {
-    border-bottom: 0;
-    border-right: 1px solid rgba(171, 129, 108, 0.5);
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 20px;
-  }
-}
-
-.form__location {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.22;
-
-  color: $fontColorPrimary;
-
-  @media screen and (min-width: 768px) {
-    text-align: end;
-    padding: 0 32px 0 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-  }
-}
-
-.form__city {
-  @media screen and (min-width: 1280px) {
-    padding: 0px 32px 32px 0;
-  }
-}
-
-.form__price {
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.22;
-  padding: 20px 0 20px 0;
-
-  @media screen and (min-width: 768px) {
-    text-align: end;
-    padding: 32px 0 0 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding: 0;
-  }
-}
-
-.form__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.22;
-
-  margin: 8px 0 20px 0;
-  color: $fontColorPrimary;
-
-  @media screen and (min-width: 768px) {
-    margin: 0 0 16px 24px;
-    text-align: start;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 18px;
-    margin: 0 0 13px 32px;
-  }
-}
-
-.form__form {
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: baseline;
-
-  }
-}
-
-.form__figur {
-  margin-bottom: 32px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin: 0 54px 0 24px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin: 0 23px 0 32px;
-  }
-}
-
-.form__figuration {
-  max-width: 265px;
-  height: 22px;
-
-  color: rgba(171, 129, 108, 0.5);
-
-  &:not(:last-child) {
+  &__caption {
     margin-bottom: 20px;
+  
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+  }
+  &__subject {
+    margin-bottom: 20px;
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__info {
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  
+    @media screen and (min-width: 768px) {
+      border-bottom: 0;
+      border-right: 1px solid rgba(171, 129, 108, 0.5);
+    }
+  
+    @media screen and (min-width: 1280px) {
+      padding-top: 20px;
+    }
+  }
+  &__location {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+
+    color: $fontColorPrimary;
+
+    @media screen and (min-width: 768px) {
+      text-align: end;
+      padding: 0 32px 0 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+    }
+  }
+  &__city {
+    @media screen and (min-width: 1280px) {
+      padding: 0px 32px 32px 0;
+    }
   }
 
-  @media screen and (min-width: 768px) {
-    width: 237px;
+  &__price {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    padding: 20px 0 20px 0;
+
+    @media screen and (min-width: 768px) {
+      text-align: end;
+      padding: 32px 0 0 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 0;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.22;
+
+    margin: 8px 0 20px 0;
+    color: $fontColorPrimary;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 16px 24px;
+      text-align: start;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      margin: 0 0 13px 32px;
+    }
+  }
+  &__form {
+  
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+  
+    }
+  }
+  &__figur {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin: 0 54px 0 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin: 0 23px 0 32px;
+    }
+  }
+  &__figuration {
+    max-width: 265px;
+    height: 22px;
+
+    color: rgba(171, 129, 108, 0.5);
 
     &:not(:last-child) {
-      margin-bottom: 16px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 237px;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &__input {
+    width: 100%;
+  
+    border: none;
+    border-bottom: 1px solid $fontColorSecondary;
+  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.21;
+  
+    background-color: $bgColorPrimary;
+  }
+
+  &__button {
+    font-family: $fontFamilyTitle;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.26;
+  
+    padding: 8px 47px 9px 46px;
+    border-radius: 25px;
+    border: none;
+  
+    color: $colorWhite;
+    background-color: $fontColorSecondary;
+  
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus,
+    &:active {
+      filter: drop-shadow(0px 1px 17px #cf8764);
+    }
+  
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
     }
   }
 }
 
-.form__input {
-  width: 100%;
-
-  border: none;
-  border-bottom: 1px solid $fontColorSecondary;
-
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.21;
-
-  background-color: $bgColorPrimary;
-}
 
 input::placeholder {
   color: rgba(171, 129, 108, 0.5);
-}
-
-.form__button {
-  font-family: $fontFamilyTitle;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.26;
-
-  padding: 8px 47px 9px 46px;
-  border-radius: 25px;
-  border: none;
-
-  color: $colorWhite;
-  background-color: $fontColorSecondary;
-
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus,
-  &:active {
-    filter: drop-shadow(0px 1px 17px #cf8764);
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 24px;
-  }
 }
 
 .img__donut {
@@ -267,6 +257,7 @@ input::placeholder {
   @media screen and (min-width: 1280px) {
     display: none;
   }
+  
 }
 
 .img__confetti-desktop {
