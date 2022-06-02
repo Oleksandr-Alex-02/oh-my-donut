@@ -18,8 +18,14 @@
 }
 
 .column {
+  @media screen and (min-width: $tablet) {
+    max-width: 336px;
+    margin-right: 32px;
+  }
+
   @media screen and (min-width: $desktop) {
     max-width: 392px;
+    margin-right: 0;
   }
 }
 
@@ -100,7 +106,10 @@
   background-color: transparent;
   border: transparent;
 
-  &:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
     color: $fontColorAccent;
   }
 
@@ -146,7 +155,7 @@
   justify-content: flex-end;
   position: relative;
   width: 130px;
-  height: 165px;
+  height: 170px;
 
   &:nth-child(2) {
     margin-bottom: 0;
@@ -166,7 +175,7 @@
 
   &::before {
     content: '';
-    background-image: url(../images/donut-77.png);
+    background-image: url(../images/program/donut-97.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 77px;
@@ -176,7 +185,6 @@
     left: 25px;
 
     @media screen and (min-width: $tablet) {
-      background-image: url(../images/donut-80.png);
       width: 82px;
       height: 90px;
       left: 35px;
@@ -184,70 +192,36 @@
     }
 
     @media screen and (min-width: $desktop) {
-      background-image: url(../images/donut-97.png);
       width: 97px;
       height: 107px;
       left: 41px;
       bottom: 116px;
     }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/donut@2x-77.png');
-    }
-
-    @media screen and (min-width: $tablet) {
-      & {
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url('../images/donut@2x-80.png');
-        }
-      }
-    }
-
     @media screen and (min-width: $desktop) {
       & {
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url('../images/donut@2x-97.png');
+          background-image: url('../images/program/donut@2x-97.png');
         }
       }
     }
   }
 
   &:nth-child(2)::before {
-    background-image: url(../images/donut2-77.png);
-    width: 78px;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/donut2@2x-77.png');
-    }
+    background-image: url(../images/program/donut2-97.png);
+    width: 76px;
+    bottom: 95px;
 
     @media screen and (min-width: $tablet) {
-      background-image: url(../images/donut2-80.png);
       width: 74px;
       height: 82px;
       left: 39px;
       bottom: 104px;
     }
 
-    @media screen and (min-width: $tablet) {
-      & {
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url('../images/donut2@2x-80.png');
-        }
-      }
-    }
-
     @media screen and (min-width: $desktop) {
-      background-image: url(../images/donut2-97.png);
       width: 88px;
       height: 97px;
       left: 46px;
@@ -259,7 +233,7 @@
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url('../images/donut2@2x-97.png');
+          background-image: url('../images/program/donut2@2x-97.png');
         }
       }
     }
@@ -268,17 +242,10 @@
 
 .donut__item--background {
   &:nth-child(1)::before {
-    background-image: url(../images/donut3-77.png);
+    background-image: url(../images/program/donut3-97.png);
     width: 75px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/donut3@2x-77.png');
-    }
-
     @media screen and (min-width: $tablet) {
-      background-image: url(../images/donut3-80.png);
       width: 69px;
       height: 77px;
       left: 40px;
@@ -286,87 +253,46 @@
     }
 
     @media screen and (min-width: $desktop) {
-      background-image: url(../images/donut3-97.png);
       width: 97px;
       height: 107px;
       left: 48px;
       bottom: 123px;
     }
 
-    @media screen and (min-width: $tablet) {
-      & {
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url('../images/donut3@2x-80.png');
-        }
-      }
-    }
-
     @media screen and (min-width: $desktop) {
       & {
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url('../images/donut3@2x-97.png');
+          background-image: url('../images/program/donut3@2x-97.png');
         }
       }
     }
   }
 
   &:nth-child(2)::before {
-    background-image: url(../images/donut4-77.png);
+    background-image: url(../images/program/donut4-97.png);
     width: 74px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/donut4@2x-77.png');
-    }
-
     @media screen and (min-width: $tablet) {
-      background-image: url(../images/donut4-80.png);
       width: 70px;
       height: 78px;
       left: 41px;
       bottom: 104px;
     }
 
-    @media screen and (min-width: $tablet) {
-      & {
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url('../images/donut4@2x-80.png');
-        }
-      }
-    }
-
     @media screen and (min-width: $desktop) {
-      & {
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url('../images/donut3@2x-97.png');
-        }
-      }
-    }
-
-    @media screen and (min-width: $desktop) {
-      background-image: url(../images/donut4-97.png);
       width: 83px;
       height: 92px;
       left: 49px;
       bottom: 123px;
     }
 
-    @media screen and (min-width: $tablet) {
-      & {
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url('../images/donut4@2x-97.png');
-        }
+    & {
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/program/donut4@2x-97.png');
       }
     }
   }
