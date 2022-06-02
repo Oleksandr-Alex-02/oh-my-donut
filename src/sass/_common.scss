@@ -1,69 +1,68 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    color: $fontColorPrimary;
-    background-color: $bgColorPrimary;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  color: $fontColorPrimary;
+  background-color: $bgColorPrimary;
 }
 
-
 .container {
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 
-    @media (min-width: 320px) {
-        max-width: 480px;
-    }
+  @media (min-width: 320px) {
+    max-width: 480px;
+  }
 
-    @media (min-width: 480px) {
-        max-width: 768px;
-    }
+  @media (min-width: 480px) {
+    max-width: 768px;
+  }
 
-    @media (min-width: 768px) {
-        padding: 0 32px;
-        max-width: 768px;
-    }
+  @media (min-width: 768px) {
+    padding: 0 32px;
+    max-width: 768px;
+  }
 
-    @media (min-width: 1280px) {
-        padding: 0 16px;
-        max-width: 1280px;
-    }
+  @media (min-width: 1280px) {
+    padding: 0 16px;
+    max-width: 1280px;
+  }
 }
 
 .background__top {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-image: url(/src/images/background/bg-top-mob.png);
+
+  @media (min-width: 480px) {
+    background-size: cover;
     background-image: url(/src/images/background/bg-top-mob.png);
+  }
 
-    @media (min-width: 480px) {
-        background-size: cover;
-        background-image: url(/src/images/background/bg-top-mob.png);
-    }
+  @media (min-width: 768px) {
+    background-size: contain;
+    background-image: url(/src/images/background/bg-top-tablet.png);
+  }
 
-    @media (min-width: 768px) {
-        background-size: contain;
-        background-image: url(/src/images/background/bg-top-tablet.png);
-    }
-
-    @media (min-width: 1000px) {
-        background-size: cover;
-        background-image: url(/src/images/background/bg-top-desktop.png);
-    }
-
+  @media (min-width: 1000px) {
+    background-size: cover;
+    background-image: url(/src/images/background/bg-top-desktop.png);
+  }
 }
 
 .background__bottom {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
