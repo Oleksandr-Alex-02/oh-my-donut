@@ -1,5 +1,4 @@
 .page-header {
-
   padding-top: 8px;
   padding-bottom: 5px;
   text-align: center;
@@ -30,7 +29,7 @@
 
 .header__image {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 
   @media screen and (max-width: 767px) {
     top: -52px;
@@ -49,7 +48,6 @@
     top: -170px;
     right: -100px;
   }
-
 }
 
 .header__title {
@@ -78,7 +76,6 @@
 }
 
 .header__subtitle {
-
   display: block;
   font-weight: 500;
   font-size: 16px;
@@ -106,7 +103,6 @@
     line-height: 1.208;
     margin-bottom: 32px;
   }
-
 }
 
 .header__link {
