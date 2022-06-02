@@ -1,6 +1,6 @@
 //  Open menu
 
-const burger = document.querySelector('[burger]');
+const burger = document.querySelector('[DATA-BURGER]');
 const mobile = document.querySelector('[data-mobile]');
 
 if (burger) {
@@ -13,7 +13,7 @@ function onBurgerClick() {
 }
 
 const navLinks = document.querySelector('.nav__list');
-const navLinksMenu = document.querySelector('[nav]');
+const navLinksMenu = document.querySelector('[DATA-NAVIGATION]');
 
 if (navLinks) {
   navLinks.addEventListener('click', onMenuLinkClick);
