@@ -162,8 +162,12 @@
   transform: scale(1) translate(0, -50%);
 }
 .buttonup {
-  width: 88px;
-  height: 118px;
+  display: none;
+  @media screen and (min-width: 1280px) {
+      display: block;;
+    }
+  width: 60px;
+  height: 100px;
   position: fixed;
   bottom: 20px;
   right: 50px;
