@@ -65,9 +65,9 @@ showButton.addEventListener('click', () => {
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[map-data-modal-open]'),
-    closeModalBtn: document.querySelector('[map-data-modal-close]'),
-    modal: document.querySelector('[map-data-modal]'),
+    openModalBtn: document.querySelector('[data-map-modal-open]'),
+    closeModalBtn: document.querySelector('[data-map-modal-close]'),
+    modal: document.querySelector('[data-map-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
