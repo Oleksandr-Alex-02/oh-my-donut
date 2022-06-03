@@ -92,11 +92,11 @@
     color: $fontColorPrimary;
     transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
+    &:hover,
     &:focus,
     &:active {
       color: $fontColorAccent;
-      filter: drop-shadow(0px 1px 17px #cf8764);
+      filter: drop-shadow(0px 1px 8px #cf8764);
     }
   }
 }
@@ -165,11 +165,15 @@
   top: 50%;
   transform: scale(1) translate(0, -50%);
 }
+
 .buttonup {
   display: none;
+
   @media screen and (min-width: 1280px) {
-      display: block;;
-    }
+    display: block;
+    ;
+  }
+
   width: 60px;
   height: 100px;
   position: fixed;
