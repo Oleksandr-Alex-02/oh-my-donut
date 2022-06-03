@@ -90,9 +90,13 @@
 
   &__link {
     color: $fontColorPrimary;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
+  &:hover,
+    &:focus,
+    &:active {
       color: $fontColorAccent;
+      filter: drop-shadow(0px 1px 17px #cf8764);
     }
   }
 }
